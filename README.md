@@ -1,6 +1,6 @@
 # 👩‍🔬 Femei de Știință din România  
 ## Resursă Educațională Digitală
-
+## Pentru utilizare accesează https://bogdanstanciulescu.github.io/femei-de-stiinta-din-romania-red/
 ### Descriere (Română)
 
 De-a lungul istoriei, femeile au avut un acces limitat la educație și cercetare, însă multe dintre ele au reușit să devină **pioniere în domenii științifice esențiale**.  
