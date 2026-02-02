@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Femei de Știință din România</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      opacity: 0.9;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+      flex-wrap: wrap;
+    }
+
+    .menu button {
+      width: 280px;
+      height: 100px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      background: #ffcc00;
+      color: #000;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .menu button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    }
+
+    section {
+      display: none;
+      padding: 40px 8%;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      background: rgba(255,255,255,0.12);
+      border-radius: 25px;
+      padding: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .card img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffcc00;
+      background: #333;
+    }
+
+    .card h2 {
+      font-size: 2rem;
+      margin: 0 0 10px 0;
+      color: #ffcc00;
+    }
+
+    .card h3 {
+      margin: 0 0 10px 0;
+      font-weight: normal;
+      opacity: 0.9;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 40px auto 0 auto;
+      width: 260px;
+      height: 90px;
+      font-size: 1.4rem;
+      border-radius: 20px;
+      border: none;
+      background: #00e5ff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .back-btn:hover {
+      background: #4dffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.4);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>👩‍🔬 Femei de Știință din România</h1>
+  <p>Pioniere, inovatoare și lidere care au schimbat lumea</p>
+</header>
+
+<div class="menu">
+  <button onclick="showSection('pioniere')">Pioniere</button>
+  <button onclick="showSection('inovatoare')">Inovatoare & Lideri</button>
+  <button onclick="showSection('contemporane')">Contemporane de Elită</button>
+  <button onclick="showSection('context')">Context Istoric</button>
+</div>
+
+<section id="pioniere">
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToTfnzwYicvQQcriNTZkdirnElvtI9yn94eMNQsouWL83cR3KMiSXzXdwUJJfy2rb7hlsv4_eJo2ClF0nL5TjMA9oq_Psb4beyjr_T0g&s=10">
+    <div>
+      <h2>Elisa Leonida Zamfirescu</h2>
+      <h3>Inginerie Chimică, Geologie</h3>
+      <p>Una dintre primele femei inginer chimist din lume. A realizat cercetări importante asupra resurselor naturale ale României și a publicat studii economice de referință. Ocupă un loc de onoare în istoria mondială a științei, fiind recunoscută drept prima femeie inginer din Europa (și, conform unor surse, chiar din lume, deși acest titlu este uneori disputat cu irlandeza Alice Perry).
+        <button onclick="document.location='https://ro.wikipedia.org/wiki/Elisa_Leonida_Zamfirescu'">CITEȘTE MAI MULT</button></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dk-eGa9vmHA?si=7XqnXs0vd2OA_IWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://federatiasanitas.ro/wp-content/uploads/2018/06/Sofia-Ionescu-Ogrezeanu.jpg">
+    <div>
+      <h2>Sofia Ionescu-Ogrezeanu</h2>
+      <h3>Neurochirurgie</h3>
+      <p>Pionieră în neurochirurgie, considerată una dintre primele femei neurochirurgi din lume. A efectuat intervenții pe creier încă din anul 1944.
+      <button onclick="document.location='https://ro.wikipedia.org/wiki/Sofia_Ionescu-Ogrezeanu'">CITEȘTE MAI MULT</button></p>
+      <iframe width="815" height="458" src="https://www.youtube.com/embed/cIVxhsa3lko" title="Profesioniştii cu Sofia Ionescu (@TVR1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTInITwNHux1FwYZoIMqrz8qiQBaiXPD_KV5w&s">
+    <div>
+      <h2>Aurora Gruescu</h2>
+      <h3>Inginerie Forestieră</h3>
+      <p>Una dintre primele femei inginer forestier din lume, implicată în realizarea primului plan național de împădurire al României.
+      <button onclick="document.location='https://ro.wikipedia.org/wiki/Aurora_Gruescu'">CITEȘTE MAI MULT</button></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cgLzpRrnDzM?si=oEbqizOitnu1saou" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="goHome()">Înapoi la meniu</button>
+</section>
+
+<section id="inovatoare">
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Stefania_Maracineanu1913.jpg/960px-Stefania_Maracineanu1913.jpg">
+    <div>
+      <h2>Ștefania Mărăcineanu</h2>
+      <h3>Fizică, Radioactivitate</h3>
+      <p>A lucrat în echipa Mariei Curie și a contribuit la cercetările fundamentale privind radioactivitatea.Deși Premiul Nobel pentru descoperirea radioactivității artificiale a fost acordat soților Joliot-Curie, mulți istorici ai științei susțin că munca Ștefaniei a fost baza acestei descoperiri.
+
+Contribuția majoră: A studiat timpul de înjumătățire al poloniului și a observat fenomenul de radioactivitate artificială (provocată prin bombardarea unor metale cu particule alfa).
+
+Recunoaștere: A lucrat în laboratorul celebrei Marie Curie la Paris. În 1936, Academia de Științe din România a recunoscut că ea a fost prima care a observat acest fenomen, cu mult înaintea laureaților Nobel.
+<button onclick="document.location='https://ro.wikipedia.org/wiki/%C8%98tefania_M%C4%83r%C4%83cineanu'">CITEȘTE MAI MULT</button></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Kanuw-gLl0U?si=smzq4o8oRTMHnilw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Florica_Bagdasar.jpg/250px-Florica_Bagdasar.jpg">
+    <div>
+      <h2>Florica Bagdasar</h2>
+      <h3>Medicină, Sănătate Publică</h3>
+      <p>Prima femeie ministru din România, Ministrul Sănătății în perioada postbelică, cu impact major asupra sistemului sanitar.
+    <button onclick="document.location='https://ro.wikipedia.org/wiki/Florica_Bagdasar'">CITEȘTE MAI MULT</button></p></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eGbL9aJz7uM?si=rqfyvBU6G8ZkhrO7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Raluca_Ripan.jpg">
+    <div>
+      <h2>Raluca Ripan</h2>
+      <h3>Prima femeie aleasă membru plin al Academiei Române (1948).</h3>
+      <p>Contribuția majoră: A fost o specialistă de talie mondială în chimia anorganică și chimia metalelor rare. A pus bazele școlii de chimie de la Cluj și a studiat compușii complecși utilizați în analiza chimică modernă.
+
+Moștenire: A scris tratate fundamentale de chimie care au format zeci de generații de cercetători.
+<button onclick="document.location='https://ro.wikipedia.org/wiki/Raluca_Ripan'">CITEȘTE MAI MULT</button>
+</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k-5YpgRUChg?si=_dQbnLEzlUYqBAYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="goHome()">Înapoi la meniu</button>
+</section>
+
+<section id="contemporane">
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Ana_Aslan_1970.jpg/500px-Ana_Aslan_1970.jpg">
+    <div>
+      <h2>Ana Aslan</h2>
+      <h3>Geriatrie, Medicină</h3>
+      <p>Cunoscută internațional pentru cercetările privind îmbătrânirea și dezvoltarea tratamentului Gerovital.
+
+Gerovital H3: A creat primul medicament biotehnologic creat pentru a întârzia procesul de îmbătrânire.
+
+Impact: A înființat în 1952 primul Institut de Geriatrie din lume, la București, model preluat ulterior de numeroase alte țări. Printre pacienții ei s-au numărat Charles de Gaulle, John F. Kennedy și Indira Gandhi.
+<button onclick="document.location='https://en.wikipedia.org/wiki/Ana_Aslan'">CITEȘTE MAI MULT</button></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EBvSXnTOGhE?si=rz1hOpivdQ-xwAxt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Alice_S%C4%83vulescu.jpg">
+    <div>
+      <h2>Alice Săvulescu</h2>
+      <h3>Pioniera Micologiei</h3>
+      <p>O figură centrală în biologia românească, s-a specializat în microbiologie și fitopatologie (bolile plantelor).
+
+Contribuția majoră: A studiat ciupercile parazite și a dezvoltat metode de protecție a culturilor agricole, esențiale pentru economia României postbelice.
+
+Recunoaștere: A fost membru corespondent al multor academii străine și a condus Institutul de Biologie al Academiei Române.
+<button onclick="document.location='https://ro.wikipedia.org/wiki/Alice_S%C4%83vulescu'">CITEȘTE MAI MULT</button></p>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="goHome()">Înapoi la meniu</button>
+</section>
+
+<section id="context">
+  <div class="card">
+    <div>
+      <h2>📚 Context Istoric și Progres</h2>
+      <p>Realizările acestor femei sunt cu atât mai impresionante cu cât au fost obținute într-un context istoric dificil. Deși educația primară a devenit obligatorie pentru fete și băieți în 1864, accesul fetelor la învățământul secundar și universitar a fost limitat. Spre sfârșitul secolului al XIX-lea, femeile au început să câștige acces la universități, depășind bariere sociale și instituționale majore.
+      De ce sunt aceste femei importante astăzi?
+Într-o perioadă în care accesul femeilor la educație era o excepție, aceste cercetătoare au reușit să conducă institute de renume și să publice lucrări traduse în zeci de limbi. Ele au demonstrat o reziliență academică ieșită din comun, luptând simultan cu necunoscutele științei și cu rigiditatea societății.
+<p> Ștefania Mărăcineanu și „Nobelul pierdut”
+Povestea ei se desfășoară în „epoca de aur” a fizicii atomice, la Paris, în Laboratorul Curie.
+
+Descoperirea care a schimbat totul
+În 1924, Ștefania și-a susținut teza de doctorat la Sorbona. În timp ce studia poloniul (element descoperit de Marie Curie), a observat ceva ciudat: metalele de suport (precum plumbul sau aluminiul) deveneau ele însele radioactive după ce erau expuse radiațiilor poloniului.
+
+Acesta a fost primul indiciu al radioactivității artificiale.
+
+Ea a publicat aceste observații, dar la acea vreme lumea științifică a fost sceptică.
+
+Controversa cu soții Joliot-Curie
+Zece ani mai târziu, în 1934, Frédéric și Irène Joliot-Curie au anunțat oficial descoperirea radioactivității artificiale, fapt pentru care au primit Premiul Nobel în 1935.
+
+Ștefania Mărăcineanu a trimis o scrisoare Academiei de Științe din Paris, amintind că ea observase fenomenul cu un deceniu înainte.
+
+Irène Joliot-Curie a recunoscut ulterior, într-un articol, că Ștefania fusese prima care observase emisia de radiații, dar meritul oficial a rămas la familia Curie pentru explicarea teoretică completă.</p>
+      </p>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="goHome()">Înapoi la meniu</button>
+</section>
+
+<footer>
+  <p>Proiect educațional realizat de STĂNCIULESCU BOGDAN Elev și Doamna Profesor LIDIA DUMBRAVĂ de la Colegiul Național “Unirea” din Focșani.
+    <p>Pentru cea mai bună experiență se recomandă utilizarea pe un computer.</p>
+    <p>Materialul educativ se poate folosi optional cu un Microsoft Kinect V2 .</p></p>
+</footer>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function goHome() {
+    document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
